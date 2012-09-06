@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\String">
+      <UniqueIdentifier>{8b4f38f6-d9a6-4ce9-8713-3109a9b67307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{ade9e862-6d63-4c11-90f2-75f2840f9888}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Pack">
+      <UniqueIdentifier>{5ac2e27f-95b6-4dd4-b025-d6dc8ddb7ec2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Mem">
+      <UniqueIdentifier>{bd5fe164-7c25-41a7-a51b-9ee4734eb4c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Stream">
+      <UniqueIdentifier>{e29c8a63-41a9-42ef-9801-9be276161bb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Collection">
+      <UniqueIdentifier>{047bc4be-686b-46c6-b8ce-6e47b1f13998}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Util">
+      <UniqueIdentifier>{330ba2a8-efa1-40c2-84f0-f1ef93d26421}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Windows">
+      <UniqueIdentifier>{4d9f29a4-0999-45f6-aff9-0afe92968755}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Render">
+      <UniqueIdentifier>{8429e4c3-12df-4bd1-ad5c-cdf9303dfd03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Image">
+      <UniqueIdentifier>{f6b9bf78-fc55-49ee-9711-fc121ef1df0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\config.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\String\String.h">
+      <Filter>Source Files\String</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\distance.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\globalmath.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\matrix2x2.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\matrix2x2_inline.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\matrix3x3.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\matrix3x3_inline.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\matrix4x4.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\matrix4x4_inline.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\me.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\point2D.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\point2D_inline.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\polar2D.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\polar2D_inline.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\vector2D.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\vector2D_inline.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\vector3D.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\vector3D_inline.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\vector4D.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\vector4D_inline.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pack\pack.h">
+      <Filter>Source Files\Pack</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mem\memory.h">
+      <Filter>Source Files\Mem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Stream\bytestreamreader.h">
+      <Filter>Source Files\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Stream\filestreamreader.h">
+      <Filter>Source Files\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Stream\stream.h">
+      <Filter>Source Files\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Stream\streamreader.h">
+      <Filter>Source Files\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Collection\collection.h">
+      <Filter>Source Files\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Collection\TArray.h">
+      <Filter>Source Files\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Collection\TArray_inline.h">
+      <Filter>Source Files\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Collection\THashTable.h">
+      <Filter>Source Files\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Collection\THashTable_inline.h">
+      <Filter>Source Files\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Collection\TSLListNode.h">
+      <Filter>Source Files\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Collection\TSLListNode_inline.h">
+      <Filter>Source Files\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Util\Color.h">
+      <Filter>Source Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Util\util.h">
+      <Filter>Source Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Windows\WinMain.h">
+      <Filter>Source Files\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Render\DisplayDevice.h">
+      <Filter>Source Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Render\Font.h">
+      <Filter>Source Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Render\IndexBuffer.h">
+      <Filter>Source Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Render\IndexBuffer_inline.h">
+      <Filter>Source Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Render\Light.h">
+      <Filter>Source Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Render\Material.h">
+      <Filter>Source Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Render\Render.h">
+      <Filter>Source Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Render\RenderConstants.h">
+      <Filter>Source Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Render\SimpleMesh.h">
+      <Filter>Source Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Render\Texture.h">
+      <Filter>Source Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Render\VertexBuffer.h">
+      <Filter>Source Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Image\CBmp.h">
+      <Filter>Source Files\Image</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\String\String.cpp">
+      <Filter>Source Files\String</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Math\matrix2x2.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Math\matrix3x3.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Math\matrix4x4.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Math\vector2D.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Math\vector3D.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Math\vector4D.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pack\pack.cpp">
+      <Filter>Source Files\Pack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Stream\bytestreamreader.cpp">
+      <Filter>Source Files\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Stream\filestreamreader.cpp">
+      <Filter>Source Files\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Stream\streamreader.cpp">
+      <Filter>Source Files\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Util\Color.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Windows\WinMain.cpp">
+      <Filter>Source Files\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Render\DisplayDevice.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Render\Font.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Render\IndexBuffer.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Render\Light.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Render\Material.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Render\SimpleMesh.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Render\Texture.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Render\VertexBuffer.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Image\CBmp.cpp">
+      <Filter>Source Files\Image</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

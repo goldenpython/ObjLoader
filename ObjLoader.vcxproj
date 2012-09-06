@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1C581A2D-5CBB-42C8-B495-81B4916BA357}</ProjectGuid>
+    <RootNamespace>ObjLoader</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>ObjLoader</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <ReferencePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(DXSDK_DIR);$(DXSDK_DIR)\lib\x86;$(ReferencePath)</ReferencePath>
+    <ReferencePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(DXSDK_DIR);$(DXSDK_DIR)\lib\x86;$(ReferencePath)</ReferencePath>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\bin\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\bin\intermed\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)\bin\intermed\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <ReferencePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(DXSDK_DIR);$(DXSDK_DIR)\lib\x86;$(ReferencePath)</ReferencePath>
+    <ReferencePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(DXSDK_DIR);$(DXSDK_DIR)\lib\x86;$(ReferencePath)</ReferencePath>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\bin\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\bin\intermed\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)\bin\intermed\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(DXSDK_DIR)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(DXSDK_DIR)\Lib\x86\d3d9.lib;$(DXSDK_DIR)\lib\x86\d3dx9.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)ObjLoader.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)ObjLoader.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(DXSDK_DIR)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(DXSDK_DIR)\Lib\x64\d3d9.lib;$(DXSDK_DIR)\lib\x64\d3dx9.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)ObjLoader.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)ObjLoader.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(DXSDK_DIR)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(DXSDK_DIR)\Lib\x86\d3d9.lib;$(DXSDK_DIR)\Lib\x86\d3dx9.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)ObjLoader.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(DXSDK_DIR)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(DXSDK_DIR)\Lib\x64\d3d9.lib;$(DXSDK_DIR)\Lib\x64\d3dx9.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)ObjLoader.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\config.h" />
+    <ClInclude Include="src\String\String.h" />
+    <ClInclude Include="src\Math\distance.h" />
+    <ClInclude Include="src\Math\globalmath.h" />
+    <ClInclude Include="src\Math\matrix2x2.h" />
+    <ClInclude Include="src\Math\matrix2x2_inline.h" />
+    <ClInclude Include="src\Math\matrix3x3.h" />
+    <ClInclude Include="src\Math\matrix3x3_inline.h" />
+    <ClInclude Include="src\Math\matrix4x4.h" />
+    <ClInclude Include="src\Math\matrix4x4_inline.h" />
+    <ClInclude Include="src\Math\me.h" />
+    <ClInclude Include="src\Math\point2D.h" />
+    <ClInclude Include="src\Math\point2D_inline.h" />
+    <ClInclude Include="src\Math\polar2D.h" />
+    <ClInclude Include="src\Math\polar2D_inline.h" />
+    <ClInclude Include="src\Math\vector2D.h" />
+    <ClInclude Include="src\Math\vector2D_inline.h" />
+    <ClInclude Include="src\Math\vector3D.h" />
+    <ClInclude Include="src\Math\vector3D_inline.h" />
+    <ClInclude Include="src\Math\vector4D.h" />
+    <ClInclude Include="src\Math\vector4D_inline.h" />
+    <ClInclude Include="src\pack\pack.h" />
+    <ClInclude Include="src\mem\memory.h" />
+    <ClInclude Include="src\Stream\bytestreamreader.h" />
+    <ClInclude Include="src\Stream\filestreamreader.h" />
+    <ClInclude Include="src\Stream\stream.h" />
+    <ClInclude Include="src\Stream\streamreader.h" />
+    <ClInclude Include="src\Collection\collection.h" />
+    <ClInclude Include="src\Collection\TArray.h" />
+    <ClInclude Include="src\Collection\TArray_inline.h" />
+    <ClInclude Include="src\Collection\THashTable.h" />
+    <ClInclude Include="src\Collection\THashTable_inline.h" />
+    <ClInclude Include="src\Collection\TSLListNode.h" />
+    <ClInclude Include="src\Collection\TSLListNode_inline.h" />
+    <ClInclude Include="src\Util\Color.h" />
+    <ClInclude Include="src\Util\util.h" />
+    <ClInclude Include="src\Windows\WinMain.h" />
+    <ClInclude Include="src\Render\DisplayDevice.h" />
+    <ClInclude Include="src\Render\Font.h" />
+    <ClInclude Include="src\Render\IndexBuffer.h" />
+    <ClInclude Include="src\Render\IndexBuffer_inline.h" />
+    <ClInclude Include="src\Render\Light.h" />
+    <ClInclude Include="src\Render\Material.h" />
+    <ClInclude Include="src\Render\Render.h" />
+    <ClInclude Include="src\Render\RenderConstants.h" />
+    <ClInclude Include="src\Render\SimpleMesh.h" />
+    <ClInclude Include="src\Render\Texture.h" />
+    <ClInclude Include="src\Render\VertexBuffer.h" />
+    <ClInclude Include="src\Image\CBmp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\String\String.cpp" />
+    <ClCompile Include="src\Math\matrix2x2.cpp" />
+    <ClCompile Include="src\Math\matrix3x3.cpp" />
+    <ClCompile Include="src\Math\matrix4x4.cpp" />
+    <ClCompile Include="src\Math\vector2D.cpp" />
+    <ClCompile Include="src\Math\vector3D.cpp" />
+    <ClCompile Include="src\Math\vector4D.cpp" />
+    <ClCompile Include="src\pack\pack.cpp" />
+    <ClCompile Include="src\Stream\bytestreamreader.cpp" />
+    <ClCompile Include="src\Stream\filestreamreader.cpp" />
+    <ClCompile Include="src\Stream\streamreader.cpp" />
+    <ClCompile Include="src\Util\Color.cpp" />
+    <ClCompile Include="src\Windows\WinMain.cpp" />
+    <ClCompile Include="src\Render\DisplayDevice.cpp" />
+    <ClCompile Include="src\Render\Font.cpp" />
+    <ClCompile Include="src\Render\IndexBuffer.cpp" />
+    <ClCompile Include="src\Render\Light.cpp" />
+    <ClCompile Include="src\Render\Material.cpp" />
+    <ClCompile Include="src\Render\SimpleMesh.cpp" />
+    <ClCompile Include="src\Render\Texture.cpp" />
+    <ClCompile Include="src\Render\VertexBuffer.cpp" />
+    <ClCompile Include="src\Image\CBmp.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
