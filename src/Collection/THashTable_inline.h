@@ -6,12 +6,14 @@
 *******************************************************************************/
 
 template <class TVALUE>
-THashTable<TVALUE>::THashTable(int iNumKeys, int (*fctGetHashIndex)(TVALUE v), bool (*fctEqualsWith)(TVALUE v1, TVALUE v2)) {
+THashTable<TVALUE>::THashTable(int iNumKeys, int (*fctGetHashIndex)(TVALUE &v), bool (*fctEqualsWith)(TVALUE &v1, TVALUE &v2)) {
 	m_aoArray = new TArray<TSLListNode<TVALUE>* >(iNumKeys);
 	m_aoArray->FillWithZero();
 
 	m_fctHashTableFunction = fctGetHashIndex;
 	m_fctEqualsWith = fctEqualsWith;
+
+	m_iNumItemsInHashTable = 0;
 }
 
 template <class TVALUE>
@@ -31,15 +33,17 @@ THashTable<TVALUE>::~THashTable() {
 }
 
 template <class TVALUE>
-void THashTable<TVALUE>::Insert(TVALUE v) {
+void THashTable<TVALUE>::Insert(TVALUE &v) {
 	int key = m_fctHashTableFunction(v) % m_aoArray->GetMaxSize();
 
 	TSLListNode<TVALUE> *node = new TSLListNode<TVALUE> (v, (*m_aoArray)[key]);
 	(*m_aoArray)[key] = node;
+
+	m_iNumItemsInHashTable++;
 }
 
 template <class TVALUE>
-TVALUE* THashTable<TVALUE>::Find(TVALUE v) {
+TVALUE* THashTable<TVALUE>::Find(TVALUE &v) {
 	int key = m_fctHashTableFunction(v) % m_aoArray->GetMaxSize();
 
 	if (m_fctEqualsWith) {
@@ -53,4 +57,8 @@ TVALUE* THashTable<TVALUE>::Find(TVALUE v) {
 	}
 
 	return NULL;
+}
+
+template <class TVALUE>
+void THashTable<TVALUE>::Resize(int iNewValue) {
 }

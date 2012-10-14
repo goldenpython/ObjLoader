@@ -71,7 +71,7 @@ struct FACE_STRUCT {
 #ifdef USE_HASHTABLE_FOR_VERTEX_SEARCH
 	int iIndex;
 
-	static int GetKey(FACE_STRUCT v) {
+	static int GetKey(FACE_STRUCT &v) {
 		int key = (v.iNormalIndex + v.iTextureIndex + v.iVertexIndex) % NUM_KEYS;
 		return key;
 	}

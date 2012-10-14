@@ -15,16 +15,21 @@
 template <class TVALUE>
 class THashTable {
 	public:
-		THashTable(int iNumKeys, int (*fctGetHashIndex)(TVALUE v), bool (*fctEqualsWith)(TVALUE v1, TVALUE v2) = NULL);
+		THashTable(int iNumKeys, int (*fctGetHashIndex)(TVALUE &v), bool (*fctEqualsWith)(TVALUE &v1, TVALUE &v2) = NULL);
 		~THashTable();
 
-		void Insert(TVALUE v);
-		TVALUE* Find(TVALUE v);
+		void Insert(TVALUE &v);
+		TVALUE* Find(TVALUE &v);
 
 	private:
 		TArray<TSLListNode<TVALUE>* > *m_aoArray;
-		int	(*m_fctHashTableFunction)(TVALUE v);
-		bool (*m_fctEqualsWith)(TVALUE v1, TVALUE v2);
+		int	(*m_fctHashTableFunction)(TVALUE &v);
+		bool (*m_fctEqualsWith)(TVALUE &v1, TVALUE &v2);
+
+
+
+		void Resize(int iNewValue);
+		int m_iNumItemsInHashTable;
 };
 
 #include "THashTable_inline.h"
